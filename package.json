@@ -6,9 +6,9 @@
     "node": "10.15.3"
   },
   "scripts": {
-    "build": "cd react-interact && yarn --cwd client install && yarn --cwd client build",
+    "build": "cd react-interact && npm --cwd client install && npm --cwd client build",
     "deploy": "cp -a client/build/. public/",
-    "heroku-postbuild": "yarn build && yarn deploy"
+    "heroku-postbuild": "npm build && npm deploy"
   },
   "author": "",
   "license": "MIT"
