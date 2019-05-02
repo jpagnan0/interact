@@ -1,0 +1,15 @@
+{
+  "name": "interact-io",
+  "version": "0.0.0",
+  "description": "",
+  "engines": {
+    "node": "10.15.3"
+  },
+  "scripts": {
+    "build": "yarn --cwd client install && yarn --cwd client build",
+    "deploy": "cp -a client/build/. public/",
+    "heroku-postbuild": "yarn build && yarn deploy"
+  },
+  "author": "",
+  "license": "MIT"
+}
