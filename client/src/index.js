@@ -23,4 +23,4 @@ if (module.hot) {
     render()
   })
 }
-serviceWorker.unregister();
+serviceWorker.register();
