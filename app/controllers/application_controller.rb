@@ -38,4 +38,7 @@ class ApplicationController < ActionController::API
     render json: { message: 'Sign Up or Login to access dashboard'} #, status: :unauthorized unless logged_in?
   end
 
+  def fallback_index_html
+    render :file => 'public/index.html'
+  end
 end
