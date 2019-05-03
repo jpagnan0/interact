@@ -1,6 +1,7 @@
 {
   "name": "interact",
   "license": "MIT",
+  "homepage":"https://interact-io.herokuapp.com",
   "engines": {
     "node": "10.15.3",
     "yarn": "1.15.2"
