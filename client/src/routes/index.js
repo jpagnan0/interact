@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, IndexRoute, Route, Switch } from 'react-router-dom';
 import NavigationBar from "../containers/NavigationBar";
 import DashBoardContainer from "../containers/DashBoardContainer"
 import SignUp from "../components/SignUp";
