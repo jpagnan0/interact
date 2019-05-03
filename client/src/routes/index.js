@@ -8,10 +8,10 @@ const routes = (
   <div>
     <NavigationBar />
     <Switch>
-
-      <Route exact path="/dashboard" component={DashBoardContainer} />
-      <Route exact path="/signup" component={SignUp} />
-      <Route exact path="/login" component={Login} />
+      <Route exact path="/" render={() => <Login />}/>
+      <Route path="/dashboard" render={()=> <DashBoardContainer />} />
+      <Route path="/signup" render={()=> <SignUp />} />
+      <Route path="/login" render={()=> <Login />} />
 
     </Switch>
   </div>
