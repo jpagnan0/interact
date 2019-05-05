@@ -1,4 +1,4 @@
-class Api::V1::InteractionsController < ApplicationController
+class Api::V1::InteractionsController < ApiController
 
   def index
     @interactions = Interaction.all

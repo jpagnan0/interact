@@ -1,4 +1,4 @@
-class Api::V1::UserMedicationsController < ApplicationController
+class Api::V1::UserMedicationsController < ApiController
   # def index
   #   @user_medications = RxNav.search_medication(params[:medication_name])
   #   render json: @search_results

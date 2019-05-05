@@ -1,4 +1,4 @@
-class Api::V1::MedicationsController < ApplicationController
+class Api::V1::MedicationsController < ApiController
   def index
     @medications = Medication.all
     render json: @medications
