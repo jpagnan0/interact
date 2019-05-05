@@ -6,4 +6,4 @@ import {
   AUTH_ERROR
 } from "../constants/actionTypes";
 
-const API = `http://localhost:3000/api/v1`;
+const API = `http://localhost:3001/api/v1`;
