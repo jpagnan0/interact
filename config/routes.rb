@@ -17,7 +17,7 @@ Rails.application.routes.draw do
       # get '/dashboard', to: 'users#dashboard'
     end
   end
-  get '*path', to: "application#fallback_index_html", constraints: ->(request) do
-  !request.xhr? && request.format.html?
-  end
+  get '*path', to: 'application#fallback_index_html', constraints: lambda { |request|
+    !request.xhr? && request.format.html?
+  }
 end
