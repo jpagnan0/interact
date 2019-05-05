@@ -6,4 +6,4 @@ import {
   AUTH_ERROR
 } from "../constants/actionTypes";
 
-const API = `http://https://interact-io.herokuapp.com/api/v1`;
+const API = `https://interact-io.herokuapp.com/api/v1`;
