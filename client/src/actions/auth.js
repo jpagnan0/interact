@@ -1,7 +1,7 @@
 import { AUTHENTICATED, LOGIN } from "../constants/actionTypes";
 import { push } from "connected-react-router";
 
-const API = `https://interact-io.herokuapp.com/api/v1`;
+const API = `http://localhost:3001/api/v1`;
 
 export function setCurrentUser(currentUser) {
   const { name, username, password } = currentUser;
@@ -26,7 +26,7 @@ export function getCurrentUser(currentUser) {
 
 export function loggedIn () {
   return dispatch => {
-    return fetch('https://interact-io.herokuapp.com/api/v1/current_user', {
+    return fetch('http://localhost:3001/api/v1/current_user', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${localStorage.token}`

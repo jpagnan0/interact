@@ -1,5 +1,5 @@
 export const endpoints = {
-  base: 'https://interact-io.herokuapp.com',
+  base: 'http://localhost:3001',
   signupPath: '/api/v1/signup',
   loginPath:'/api/v1/login',
   userPath:'/api/v1/current_user',
