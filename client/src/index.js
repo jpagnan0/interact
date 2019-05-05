@@ -16,11 +16,11 @@ const render = () => {
 // Learn more about service workers: http://bit.ly/CRA-PWA
 // // Hot reloading
 render()
-
-if (module.hot) {
-  // Reload components
-  module.hot.accept('./containers/App', () => {
-    render()
-  })
-}
-serviceWorker.unregister();
+//
+// if (module.hot) {
+//   // Reload components
+//   module.hot.accept('./containers/App', () => {
+//     render()
+//   })
+// }
+serviceWorker.register();

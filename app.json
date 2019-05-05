@@ -1,4 +1,3 @@
-
 {
   "name": "Interact",
   "description": "Medication Interactions",
@@ -9,8 +8,7 @@
   "addons": [
     "heroku-postgresql"
   ],
-  "buildpacks": [
-    {
+  "buildpacks": [{
       "url": "heroku/nodejs"
     },
     {

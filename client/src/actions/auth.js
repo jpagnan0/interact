@@ -26,7 +26,7 @@ export function getCurrentUser(currentUser) {
 
 export function loggedIn () {
   return dispatch => {
-    return fetch('http://localhost:3001/api/v1/current_user', {
+    return fetch('/api/v1/current_user', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${localStorage.token}`
