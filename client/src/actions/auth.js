@@ -1,7 +1,7 @@
 import { AUTHENTICATED, LOGIN } from "../constants/actionTypes";
 import { push } from "connected-react-router";
-
-const API = `http://localhost:3001/api/v1`;
+import { fetch } from "./helper"
+// const API = `http://localhost:3001/api/v1`;
 
 export function setCurrentUser(currentUser) {
   const { name, username, password } = currentUser;
@@ -38,7 +38,7 @@ export function loggedIn () {
 
 
 export function login({ username, password }) {
-  const request = new Request(`${API}/auth`, {
+  const request = new Request(`/auth`, {
     method: "POST",
     headers: new Headers({
       "Content-Type": "application/json",
@@ -68,7 +68,7 @@ export function login({ username, password }) {
 export function signup(user) {
   // console.log("user in auth action: ", user)
   return dispatch => {
-    return fetch(`${API}/users`, {
+    return fetch(`/users`, {
       method: "POST",
       headers: {
         Accept: "application/json",

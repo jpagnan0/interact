@@ -1,10 +1,9 @@
-import fetch from 'cross-fetch';
 import {
   RECEIVE_MEDICATIONS,
   SET_TERM,
 } from '../constants/actionTypes';
-
-const MEDICATION_URL = `http://localhost:3001/api/v1/search?medication_name=`;
+import { fetch } from "./helper"
+// const MEDICATION_URL = `http://localhost:3001/api/v1`;
 
 export function setTerm(medication) {
   return{
@@ -14,7 +13,7 @@ export function setTerm(medication) {
 }
 
 function fetchMedications(medication) {
-  return fetch(`${MEDICATION_URL}${medication}`)
+  return fetch(`/search?medication_name=${medication}`)
         .then(res => res.json())
 }
 export function medicationTerm(searchTerm) {

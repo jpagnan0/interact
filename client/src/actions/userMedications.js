@@ -1,5 +1,6 @@
 import { POST_USER_MEDICATIONS, GET_USER_MEDICATIONS,GET_USER_INTERACTIONS } from "../constants/actionTypes";
-const API = `http://localhost:3001/api/v1`;
+// const API = `http://localhost:3001/api/v1`;
+import { fetch } from "./helper"
 const headers = {
     method: 'GET',
     headers: {
@@ -9,7 +10,7 @@ const headers = {
 
 export function postUserMedication({ rxcui, name, name_alt}, id) {
   return dispatch => {
-    return fetch(`${API}/user_medications`, {
+    return fetch(`/user_medications`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -33,7 +34,7 @@ export function postUserMedication({ rxcui, name, name_alt}, id) {
 
 export function getUserMedications () {
   return dispatch => {
-    return fetch(`${API}/current_medications`, headers)
+    return fetch(`/current_medications`, headers)
     .then(r => r.json())
     .then(res => {
       // debugger
