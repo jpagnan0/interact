@@ -1,6 +1,6 @@
 import {GET_USER_INTERACTIONS } from "../constants/actionTypes";
 // import { push } from "connected-react-router";
-const API = `http://localhost:3001/api/v1`;
+const API = `http://https://interact-io.herokuapp.com/api/v1`;
 
 export function userInteractions() {
   return dispatch => {

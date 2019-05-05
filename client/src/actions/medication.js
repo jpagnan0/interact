@@ -4,7 +4,7 @@ import {
   SET_TERM,
 } from '../constants/actionTypes';
 
-const MEDICATION_URL = `http://localhost:3001/api/v1/search?medication_name=`;
+const MEDICATION_URL = `http://https://interact-io.herokuapp.com/api/v1/search?medication_name=`;
 
 export function setTerm(medication) {
   return{
