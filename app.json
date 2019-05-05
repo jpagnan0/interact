@@ -1,0 +1,20 @@
+
+{
+  "name": "Interact",
+  "description": "Medication Interactions",
+  "repository": "https://git.heroku.com/interact-io",
+  "scripts": {
+    "postdeploy": "bundle exec rake db:seed"
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}

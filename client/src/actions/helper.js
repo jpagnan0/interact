@@ -1,4 +1,4 @@
-export default function fetch(endpoint) {
+export function fetch(endpoint) {
   return window
     .fetch(endpoint)
     .then(response => response.json())
